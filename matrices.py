@@ -8,3 +8,4 @@ b=np.array([(3,5,6),(6,4,9)]);
 print("Primer Array: 2D");
 print(b);
 print();
+print();

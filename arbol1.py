@@ -1,3 +1,4 @@
+"Arbol con datos generados"
 from sklearn.datasets import load_iris
 iris = load_iris()
 
@@ -29,7 +30,7 @@ for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]])
         clf,
         X,
         cmap=plt.cm.RdYlBu,
-        response_method="predict",
+        response_method="predictora",
         ax=ax,
         xlabel=iris.feature_names[pair[0]],
         ylabel=iris.feature_names[pair[1]],
@@ -48,6 +49,6 @@ for pairidx, pair in enumerate([[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]])
             s=15,
         )
 
-plt.suptitle("Decision surface of decision trees trained on pairs of features")
-plt.legend(loc="lower right", borderpad=0, handletextpad=0)
-_ = plt.axis("tight")
+plt.suptitle("arbol de desicion")
+plt.legend(loc="bajo", borderpad=0, handletextpad=0)
+_ = plt.axis("alto")
